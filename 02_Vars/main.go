@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 // var outside main func, cannot be shorthand
 var outName = "Tsubasa"
@@ -39,4 +42,7 @@ func main() {
 	fmt.Printf("%T\n", lulus)
 	fmt.Printf("%T\n", massa)
 	fmt.Printf("%T\n", size)
+
+	// print int as str
+	fmt.Printf(nama1 + strconv.Itoa(usia1))
 }
