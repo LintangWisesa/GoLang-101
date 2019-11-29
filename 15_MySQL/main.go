@@ -26,15 +26,6 @@ func main() {
 	defer db.Close()
 
 	// ==================================
-	// insert data
-	// ==================================
-	// insert, err := db.Query("INSERT INTO mqttjs (message) VALUES ('Test Go MySQL')")
-	// if err != nil {
-	// 	panic(err.Error())
-	// }
-	// defer insert.Close()
-
-	// ==================================
 	// show all data
 	// ==================================
 	results, err := db.Query("SELECT * FROM mqttjs")
@@ -49,4 +40,31 @@ func main() {
 		}
 		fmt.Println(tag.id, tag.message, tag.time)
 	}
+
+	// ==================================
+	// insert data
+	// ==================================
+	// insert, err := db.Query("INSERT INTO mqttjs (message) VALUES ('Test Go MySQL')")
+	// if err != nil {
+	// 	panic(err.Error())
+	// }
+	// defer insert.Close()
+
+	// ==================================
+	// update data
+	// ==================================
+	// update, err := db.Query("UPDATE mqttjs set message = 'Hi World!' where message = 'Hello World!'")
+	// if err != nil {
+	// 	panic(err.Error())
+	// }
+	// defer update.Close()
+
+	// ==================================
+	// delete data
+	// ==================================
+	// delete, err := db.Query("DELETE from mqttjs where message = 'Test Go MySQL'")
+	// if err != nil {
+	// 	panic(err.Error())
+	// }
+	// defer delete.Close()
 }
