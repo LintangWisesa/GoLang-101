@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"log"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -48,6 +47,6 @@ func main() {
 		if err != nil {
 			panic(err.Error()) // proper error handling instead of panic in your app
 		}
-		log.Printf(tag.message)
+		fmt.Println(tag.id, tag.message, tag.time)
 	}
 }
