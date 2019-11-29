@@ -20,8 +20,9 @@ func (x person) hello() string {
 }
 
 // 3. has birthday method (pointer receiver)
-func (p *person) hasBirthday() {
-	p.age++
+// param pointer receiver should be same as before: x
+func (x *person) hasBirthday() {
+	x.age++
 }
 
 func main() {
