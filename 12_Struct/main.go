@@ -6,34 +6,35 @@ import (
 )
 
 // 1. declare a person struct
+// BEST TIPS: nama struct lowercase, nama attributenya uppercase!
 type person struct {
-	firstName string
-	lastName  string
-	city      string
-	gender    string
-	age       int
+	FirstName string
+	LastName  string
+	City      string
+	Gender    string
+	Age       int
 }
 
 // 2. Hello method (value receiver)
 func (x person) hello() string {
-	return "Hello, " + x.firstName + " " + x.lastName + " " + strconv.Itoa(x.age) + "th"
+	return "Hello, " + x.FirstName + " " + x.LastName + " " + strconv.Itoa(x.Age) + "th"
 }
 
 // 3. has birthday method (pointer receiver)
 // param pointer receiver should be same as before: x
 func (x *person) hasBirthday() {
-	x.age++
+	x.Age++
 }
 
 func main() {
 	// 1. call struct
-	personA := person{firstName: "Andi", lastName: "Wijaya", city: "Jakarta", gender: "Pria", age: 28}
+	personA := person{FirstName: "Andi", LastName: "Wijaya", City: "Jakarta", Gender: "Pria", Age: 28}
 	fmt.Println(personA)
-	fmt.Println(personA.age)
+	fmt.Println(personA.Age)
 
 	personB := person{"Budi", "Susilo", "Bandung", "Pria", 27}
 	fmt.Println(personB)
-	fmt.Println(personB.city)
+	fmt.Println(personB.City)
 
 	// 2. call hello method
 	fmt.Println(personA.hello())
