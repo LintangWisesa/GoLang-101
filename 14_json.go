@@ -19,9 +19,11 @@ type response2 struct {
 func main() {
 
     bolB, _ := json.Marshal(true)
+    // fmt.Println(bolB)
     fmt.Println(string(bolB))
 
     intB, _ := json.Marshal(1)
+    // fmt.Println(intB)
     fmt.Println(string(intB))
 
     fltB, _ := json.Marshal(2.34)

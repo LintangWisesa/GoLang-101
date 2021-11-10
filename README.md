@@ -1,6 +1,17 @@
-![simplinnovation](https://4.bp.blogspot.com/-f7YxPyqHAzY/WJ6VnkvE0SI/AAAAAAAADTQ/0tDQPTrVrtMAFT-q-1-3ktUQT5Il9FGdQCLcB/s350/simpLINnovation1a.png)
 
 # GoLang 101
+
+1. Create from scratch
+
+    - Create a folder, for example ```test```
+    - Open terminal on ```test``` then create a go module: ````$ go mod init test123````
+    - create a go file (.go)
+    - run the code: ````$ go run .```` or ````$ go run filename.go````
+
+2. Create from clone
+
+    - clone repo: ````$ git clone https://domain/reponame.git````
+    - Initiate go module: ````$ go mod init reponame````
 
 #### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
 
