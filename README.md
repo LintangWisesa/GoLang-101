@@ -10,8 +10,8 @@
 
 2. Create from clone
 
-    - clone repo: ````$ git clone https://domain/reponame.git````
-    - Initiate go module: ````$ go mod init reponame````
+    - clone repo: ````$ git clone https://github.com/LintangWisesa/GoLang-101.git````
+    - Initiate go module: ````$ go mod init GoLang-101````
 
 #### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
 
